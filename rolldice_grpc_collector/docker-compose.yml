@@ -11,11 +11,9 @@ services:
       - "8080:8080"
     environment:
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4316
-      # - OTEL_EXPORTER_OTLP_ENDPOINT=http://jaeger:4317
     networks:
       - dice
       - otel-collector
-      # - jaeger-example
     depends_on:
       - jaeger
       - otel-collector
