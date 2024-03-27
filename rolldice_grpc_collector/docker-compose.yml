@@ -1,0 +1,53 @@
+version: '3'
+services:
+  server:
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
+    volumes:
+      - ./server:/src/
+    tty: true
+    ports:
+      - "8080:8080"
+    environment:
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4316
+      # - OTEL_EXPORTER_OTLP_ENDPOINT=http://jaeger:4317
+    networks:
+      - dice
+      - otel-collector
+      # - jaeger-example
+    depends_on:
+      - jaeger
+      - otel-collector
+  client:
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile
+    volumes:
+      - ./client:/src/
+    tty: true
+    networks:
+      - dice
+  otel-collector:
+    image:
+      otel/opentelemetry-collector-contrib
+    volumes:
+      - ./otel-collector/otel-collector-config.yml:/etc/otelcol-contrib/config.yaml
+    ports:
+      - "4316:4316"
+    networks:
+      - otel-collector
+      - jaeger-example
+  jaeger:
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "16686:16686"
+      - "4317:4317"
+    networks:
+      - jaeger-example
+networks:
+    dice:
+    jaeger-example:
+    otel-collector:
