@@ -3,9 +3,9 @@ services:
   server:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./server/Dockerfile
     volumes:
-      - ./:/src/
+      - ./server/:/src/
     tty: true
     ports:
       - "8080:8080"
