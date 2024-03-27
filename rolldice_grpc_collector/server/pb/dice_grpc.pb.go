@@ -35,7 +35,7 @@ func NewRollDicerClient(cc grpc.ClientConnInterface) RollDicerClient {
 
 func (c *rollDicerClient) RollDice(ctx context.Context, in *RollDiceRequest, opts ...grpc.CallOption) (*RollDiceReply, error) {
 	out := new(RollDiceReply)
-	err := c.cc.Invoke(ctx, "/proto.RollDicer/RollDice", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/main.RollDicer/RollDice", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -80,7 +80,7 @@ func _RollDicer_RollDice_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/proto.RollDicer/RollDice",
+		FullMethod: "/main.RollDicer/RollDice",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(RollDicerServer).RollDice(ctx, req.(*RollDiceRequest))
@@ -92,7 +92,7 @@ func _RollDicer_RollDice_Handler(srv interface{}, ctx context.Context, dec func(
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var RollDicer_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "proto.RollDicer",
+	ServiceName: "main.RollDicer",
 	HandlerType: (*RollDicerServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

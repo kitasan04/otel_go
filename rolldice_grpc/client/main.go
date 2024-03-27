@@ -29,8 +29,7 @@ func main() {
     ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
     defer cancel()
 
-    req := &pb.RollDiceRequest{}
-    resp, err := client.RollDice(ctx, req)
+    resp, err := client.RollDice(ctx,nil)
     if err != nil {
         log.Fatalf("could not roll dice: %v", err)
     }

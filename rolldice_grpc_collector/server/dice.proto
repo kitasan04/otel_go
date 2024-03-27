@@ -1,0 +1,13 @@
+syntax="proto3";
+package main;
+option go_package="/src/pb";
+
+service RollDicer{
+	rpc RollDice (RollDiceRequest)returns(RollDiceReply){}
+}
+
+message RollDiceRequest{
+}
+message RollDiceReply{
+	string DiceNumber=1;
+}

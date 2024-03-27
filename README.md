@@ -1,8 +1,10 @@
 # 概要
 Otelでtraceを確認する
 ## rolldice_http
-![image](https://github.com/kitasan04/otel_go/assets/103953052/2f6cbb08-516f-4a74-a121-87a822d42643)
+![スライド4](https://github.com/kitasan04/otel_go/assets/103953052/224f7aef-e888-4593-a01b-41be536359ee)
 ## rolldice_grpc
-![image](https://github.com/kitasan04/otel_go/assets/103953052/23e7454b-9b22-4b8c-b1a0-19d5c34d9543)
+![スライド5](https://github.com/kitasan04/otel_go/assets/103953052/587b0f43-ed2c-4395-b276-a0c53db576d4)
 ## rolldice_grpc_collector
-![image](https://github.com/kitasan04/otel_go/assets/103953052/a5dad322-6ff8-47eb-8b4f-1b89499f5ec6)
+![スライド6](https://github.com/kitasan04/otel_go/assets/103953052/3cc247c4-b3c4-44fa-acef-45868d7ac49e)
+## filter
+![スライド7](https://github.com/kitasan04/otel_go/assets/103953052/6e34a93a-d963-4797-9ca3-f379db726d5e)
