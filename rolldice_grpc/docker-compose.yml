@@ -28,7 +28,6 @@ services:
   jaeger:
     environment:
       - COLLECTOR_OTLP_ENABLED=true
-      - METRICS_STORAGE_TYPE=prometheus
     image: jaegertracing/all-in-one:latest
     ports:
       - "16686:16686"
