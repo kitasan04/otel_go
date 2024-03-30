@@ -29,10 +29,10 @@ $ make start
 # 目次
 フォルダごとに構成が異なっています。
 
-- [rolldice_http](https://github.com/kitasan04/otel_go/edit/master/README.md#rolldice_http)
-- [rolldice_grpc](https://github.com/kitasan04/otel_go/edit/master/README.md#rolldice_grpc)
-- [rolldice_grpc_collector](https://github.com/kitasan04/otel_go/edit/master/README.md#3-rolldice_grpc_collector)
-- [filter](https://github.com/kitasan04/otel_go/edit/master/README.md#3-rolldice_grpc_collector)
+- [rolldice_http](https://github.com/kitasan04/otel_go/#rolldice_http)
+- [rolldice_grpc](https://github.com/kitasan04/otel_go/#rolldice_grpc)
+- [rolldice_grpc_collector](https://github.com/kitasan04/otel_go/#rolldice_grpc_collector)
+- [filter](https://github.com/kitasan04/otel_go/#filter)
 
 # 各フォルダーの構成図
 ## rolldice_http
