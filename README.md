@@ -26,14 +26,6 @@ $ make start
 ```
 7. [http://localhost:16686](http://localhost:16686) に接続し、Jaegerのフロントエンドに接続、Traceの確認をする。
 
-# 目次
-フォルダごとに構成が異なっています。
-
-- [rolldice_http](https://github.com/kitasan04/otel_go/#rolldice_http)
-- [rolldice_grpc](https://github.com/kitasan04/otel_go/#rolldice_grpc)
-- [rolldice_grpc_collector](https://github.com/kitasan04/otel_go/#rolldice_grpc_collector)
-- [filter](https://github.com/kitasan04/otel_go/#filter)
-
 # 各フォルダーの構成図
 ## rolldice_http
 Roll DiceサーバにRoll Diceクライアント (Webブラウザ) からリクエストを送り、その Trace をJaeger から確認できます。
