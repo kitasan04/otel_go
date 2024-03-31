@@ -43,6 +43,6 @@ rolldice_grpcでTraceをRoll DiceサーバからJaegerに送る際、OTel Collec
 ### 構成図
 ![rolldice_grpc_collectorの画像](https://github.com/kitasan04/otel_go/assets/103953052/3cc247c4-b3c4-44fa-acef-45868d7ac49e)
 ## filter
-rolldice_grpc_collectorにおいて、OTel CollectorでTraceのSpanのAttributeであるroll.valueが2の時はSpanを通さないというfilterをOtel Collectorでかける。
+rolldice_grpc_collectorにおいて、OTel CollectorでTraceのSpanのAttributeであるroll.valueが2の時はSpanを通さないというFilterをOpenTelemetry Collectorで適応させます。
 ### 構成図
 ![filter](https://github.com/kitasan04/otel_go/assets/103953052/6e34a93a-d963-4797-9ca3-f379db726d5e)
