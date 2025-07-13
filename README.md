@@ -1,6 +1,8 @@
 # 概要
 OpenTelmetry (Otel)を利用した Trace の確認を行う場合の実装の実験です。
 
+[こちらの記事](https://sreake.com/blog/opentelemetry-instrumentation/)の実装になります。
+
 サーバにリクエストを行うと１～６のランダムな値を返します。
 
 # 手順
